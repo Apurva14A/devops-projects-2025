@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patratu Valley & Dam - Nature's Masterpiece in Jharkhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Patratu Valley & Dam</h1>
+        <p>Discover the Serenity and Adventure of Jharkhand's Gem</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#overview">Overview</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#activities">Activities</a>
+        <a href="#plan-your-visit">Plan Your Visit</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <section id="overview" class="hero-section">
+            <img src="{{ url_for('static', filename='images/patratu_dam_img1.jpg') }}" alt="Patratu Valley Overview">
+            <h2>Experience Nature's Grandeur</h2>
+            <p>Nestled amidst the lush green hills of Ramgarh district in Jharkhand, Patratu Valley and Dam offer a breathtaking escape into nature's embrace. Known for its mesmerizing hairpin bends, tranquil waters, and verdant landscapes, it's a paradise for nature lovers, adventure seekers, and those seeking a peaceful retreat from city life.</p>
+        </section>
+
+        <section id="attractions" class="section">
+            <h3>Key Attractions</h3>
+            <div class="details-grid">
+                <div class="grid-item">
+                    <h4>Patratu Valley Road (Ghat Road)</h4>
+                    <p>The winding, serpentine road leading to the dam is an attraction in itself, often compared to the ghat roads of hill stations. The journey offers panoramic views of the valley, making it a favorite for road trips and photography enthusiasts.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Patratu Dam</h4>
+                    <p>A majestic engineering marvel built on the Nalkari River, the dam provides a serene backdrop for relaxation and boating. It's a significant water source and a popular picnic spot, especially during winters when migratory birds flock here.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Patratu Lake & Boating</h4>
+                    <p>The vast expanse of the lake at the dam site is perfect for various boating activities. Enjoy a leisurely ride, speed boating, or pedal boating amidst stunning natural beauty.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Nearby Resorts & Parks</h4>
+                    <p>Several resorts and well-maintained parks dot the area, offering amenities for families, couples, and groups. These spots often have children's play areas and dining options.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="section">
+            <h3>Things To Do</h3>
+            <ul>
+                <li><strong>Boating:</strong> Enjoy a range of boating options from serene pedal boats to thrilling speed boats and even larger cruise boats (charges apply, often ₹250-₹700 depending on boat type and duration).</li>
+                <li><strong>Photography:</strong> Capture the stunning landscapes, unique road architecture, and vibrant birdlife.</li>
+                <li><strong>Picnics:</strong> With ample green spaces and scenic views, it's an ideal spot for a family picnic.</li>
+                <li><strong>Nature Walks & Trekking:</strong> Explore the surrounding dense forests and winding trails for an immersive nature experience.</li>
+                <li><strong>Adventure Activities:</strong> Some resorts and adventure parks in the vicinity offer activities like zip-lining, rope courses, and more.</li>
+                <li><strong>Bird Watching:</strong> Especially during the winter months (October to March), the dam becomes a haven for various migratory birds.</li>
+            </ul>
+        </section>
+
+        <section id="plan-your-visit" class="section">
+            <h3>Plan Your Visit</h3>
+            <div class="details-grid">
+                <div class="grid-item">
+                    <h4>Best Time to Visit</h4>
+                    <p>The ideal time to visit Patratu Valley and Dam is from <strong>October to March</strong>. The weather during these months is cool, pleasant, and perfect for outdoor activities. Monsoons (June to September) offer lush greenery but can make roads slippery, while summers (April-May) can be hot.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Entry Fee & Timings</h4>
+                    <p>
+                        <strong>Valley Road:</strong> Free access.<br>
+                        <strong>Dam Area:</strong> Typically, a nominal entry fee of ₹20-₹50 per person is charged by resort/boat club managing access.<br>
+                        <strong>Parking:</strong> Approx. ₹50 for cars, ₹20 for bikes.<br>
+                        <strong>Boating:</strong> Charges vary (e.g., ₹250 for 4-person paddle boat, ₹700 for speed boat).<br>
+                        <strong>Timings:</strong> Generally open from <strong>7:00 AM to 6:00 PM</strong> for boating and general visitation. It's advised to avoid visiting after dark.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h4>How to Reach</h4>
+                    <p>
+                        Patratu Valley & Dam is located in the Ramgarh district of Jharkhand, approximately <strong>40 km from Ranchi</strong>, the capital city.<br>
+                        <strong>By Road:</strong> The most popular way to reach is by car or bike from Ranchi, taking about 1 to 1.5 hours. Buses and auto-rickshaws are also available from Ranchi.<br>
+                        <strong>Nearest Airport:</strong> Birsa Munda Airport (IXR), Ranchi (~42 km).<br>
+                        <strong>Nearest Railway Station:</strong> Patratu Railway Station (very close), or Ranchi Railway Station (~35 km).
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h4>Accommodation</h4>
+                    <p>Several resorts and hotels are available in and around Patratu Valley, offering a range of options from budget-friendly to more luxurious stays. It's recommended to book in advance, especially during peak season.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/gallery_1.jpg') }}" alt="Patratu Valley Road View">
+                <img src="{{ url_for('static', filename='images/gallery_2.jpg') }}" alt="Patratu Dam Overview">
+                <img src="{{ url_for('static', filename='images/boating_img1.jpg') }}" alt="Boating on Patratu Dam">
+                <img src="{{ url_for('static', filename='images/gallery_4.jpg') }}" alt="Green Landscape">
+                <img src="{{ url_for('static', filename='images/gallery_5.jpg') }}" alt="Sunset View at Patratu">
+                <img src="{{ url_for('static', filename='images/gallery_6.jpg') }}" alt="Local Flora and Fauna">
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h3>Contact Us</h3>
+            <p>For inquiries or assistance, you can reach out to local tourism offices or resort management. While direct government contact details for the dam may not be readily available for tourists, nearby resorts often act as information hubs.</p>
+            <p>
+                <strong>General Location:</strong> Patratu, Ramgarh District, Jharkhand, India.<br>
+                <strong>PIN Code:</strong> 829118
+            </p>
+            <p><strong>Note:</strong> Information on specific entry fees, timings, and boating charges may vary and are subject to change. It's always advisable to check with local sources or resort management upon arrival for the most current details.</p>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Patratu Valley & Dam Tourism. All rights reserved.</p>
+        <p>Connect with us:</p>
+        <div class="social-links">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Instagram</a> |
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+        <p>Designed for the serene traveler in Jharkhand.</p>
+    </div>
+
+    </body>
+</html>
