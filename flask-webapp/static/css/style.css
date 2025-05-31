@@ -53,7 +53,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active { /* Optional: Add an active class if you implement JS for active links */
-    background-color: #002d64;
+    background-color: #286400;
 }
 
 /* Main Container */
