@@ -23,9 +23,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      
+      - name: Official SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5.2.0
+        with:
+          projectBaseDir: flask-webapp
+          args: >
+              -Dsonar.organization=apurva14a # For SonarQube Cloud only
+              -Dsonar.projectKey=Apurva14A_devops-projects-2025 
+              -Dsonar.python.coverage.reportPaths=coverage.xml
+              -Dsonar.sources=lib/
+              -Dsonar.verbose=true
   
-      - name: Code Coverage by SonarQube
-        run: |
-          
-          sonar-scanner -Dsonar.organization=apurva14a -Dsonar.projectKey=Apurva14A_devops-projects-2025  -Dsonar.sources=src -Dsonar.token=${{ env.SONAR_TOKEN }} 
+     
