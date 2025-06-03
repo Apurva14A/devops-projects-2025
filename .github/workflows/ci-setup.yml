@@ -1,0 +1,31 @@
+name: Code Coverage by SonarQube
+on:
+  push:
+    branches: [flask-webapp]
+
+
+
+jobs:
+
+ Code_coverage:
+    runs-on: [ubuntu-latest]
+    environment: development
+
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+
+      # Checkout Code repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
+      
+  
+      - name: Code Coverage by SonarQube
+        run: |
+          npm install -g @sonar/scan
+          sonar-scanner -Dsonar.organization=apurva14a -Dsonar.projectKey=Apurva14A_devops-projects-2025  -Dsonar.sources=src -Dsonar.token=${{ env.SONAR_TOKEN }} 
