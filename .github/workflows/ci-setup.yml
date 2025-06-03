@@ -1,7 +1,7 @@
 name: Code Coverage by SonarQube
 on:
   push:
-    branches: [flask-webapp]
+    branches: [main]
 
 
 
