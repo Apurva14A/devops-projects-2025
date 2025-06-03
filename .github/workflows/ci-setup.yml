@@ -27,5 +27,5 @@ jobs:
   
       - name: Code Coverage by SonarQube
         run: |
-          npm install -g @sonar/scan
+          
           sonar-scanner -Dsonar.organization=apurva14a -Dsonar.projectKey=Apurva14A_devops-projects-2025  -Dsonar.sources=src -Dsonar.token=${{ env.SONAR_TOKEN }} 
